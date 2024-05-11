@@ -85,7 +85,7 @@ class SmarterProtocolLegacy:
     DirectHost = "192.168.4.1"
 
     commandHandshake    = "HELLOKETTLE"
-    responseHandshake   = "HELLOAPP"
+    responseHandshake   = "HELLOAPP\r"
 
     # Command messages
     commandStatus       = "get sys status"
