@@ -12,7 +12,7 @@ import datetime
 import os
 from smarter.SmarterInterface import *
 
-from iBrewBonjour import *
+# from iBrewBonjour import *
 from iBrewJokes import *
 from iBrewFolders import AppFolders
 
@@ -1504,8 +1504,8 @@ class iBrewWeb(tornado.web.Application):
             self.kill()
             raise SmarterError(WebServerStartFailed,"Web Server: Couldn't start on port " + self.bind + ":" + str(self.port))
 
-        bonjour = iBrewBonjourThread(self.port)
-        bonjour.start()
+        # bonjour = iBrewBonjourThread(self.port)
+        # bonjour.start()
 
         try:
             self.thread = threading.Thread(target=self.start)
